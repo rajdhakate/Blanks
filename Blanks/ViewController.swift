@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AFNetworking
 
 class ViewController: UIViewController {
 

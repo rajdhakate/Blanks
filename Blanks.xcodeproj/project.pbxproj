@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3B31C11842B67E7FD1645D9B /* Pods_BlanksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1D57518EAECCA4793C6FBD /* Pods_BlanksTests.framework */; };
 		42F8E518EAA99BB067FAD1E8 /* Pods_Blanks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0D3219E767957CDB9C001 /* Pods_Blanks.framework */; };
+		9B2610862025C111006E1241 /* BlankBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2610852025C111006E1241 /* BlankBrain.swift */; };
+		9B2610872025C111006E1241 /* BlankBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2610852025C111006E1241 /* BlankBrain.swift */; };
+		9B2610882025C111006E1241 /* BlankBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2610852025C111006E1241 /* BlankBrain.swift */; };
+		9B26108A2025C5B3006E1241 /* WordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2610892025C5B3006E1241 /* WordsCell.swift */; };
+		9B26108B2025C5B3006E1241 /* WordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2610892025C5B3006E1241 /* WordsCell.swift */; };
+		9B26108C2025C5B3006E1241 /* WordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2610892025C5B3006E1241 /* WordsCell.swift */; };
 		D53386E72024D7B4004B7723 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53386E62024D7B4004B7723 /* GameViewController.swift */; };
 		D53386E82024D7B4004B7723 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53386E62024D7B4004B7723 /* GameViewController.swift */; };
 		D53386E92024D7B4004B7723 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53386E62024D7B4004B7723 /* GameViewController.swift */; };
@@ -47,6 +53,8 @@
 		5C6AE505716F20F56518C268 /* Pods-BlanksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlanksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlanksUITests/Pods-BlanksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		81E0D3219E767957CDB9C001 /* Pods_Blanks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blanks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		833C2C671929AEB17E22262D /* Pods-BlanksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlanksUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlanksUITests/Pods-BlanksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B2610852025C111006E1241 /* BlankBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankBrain.swift; sourceTree = "<group>"; };
+		9B2610892025C5B3006E1241 /* WordsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCell.swift; sourceTree = "<group>"; };
 		A30E0081AB0E66EDE5FB224D /* Pods-BlanksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlanksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlanksTests/Pods-BlanksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4E08E775F50DFB9E59DC007 /* Pods-Blanks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blanks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blanks/Pods-Blanks.debug.xcconfig"; sourceTree = "<group>"; };
 		C0D5FCF874822929A0D5E228 /* Pods-Blanks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blanks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blanks/Pods-Blanks.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,7 +157,9 @@
 				D53DDB442024BBE600385705 /* ViewController.swift */,
 				D53386EA2024D7E0004B7723 /* StartViewController.swift */,
 				D53386E62024D7B4004B7723 /* GameViewController.swift */,
+				9B2610892025C5B3006E1241 /* WordsCell.swift */,
 				D53DDB462024BBE600385705 /* Main.storyboard */,
+				9B2610852025C111006E1241 /* BlankBrain.swift */,
 				D53DDB492024BBE600385705 /* Assets.xcassets */,
 				D53DDB4B2024BBE600385705 /* LaunchScreen.storyboard */,
 				D53DDB4E2024BBE600385705 /* Info.plist */,
@@ -329,7 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5EF1FA8E035CCB0CFE9922C7 /* [CP] Check Pods Manifest.lock */ = {
@@ -347,7 +357,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		64847A339C5086D58249F1FE /* [CP] Copy Pods Resources */ = {
@@ -395,7 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A432042B12324C0BE188D7E8 /* [CP] Embed Pods Frameworks */ = {
@@ -468,8 +478,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2610862025C111006E1241 /* BlankBrain.swift in Sources */,
 				D53DDB452024BBE600385705 /* ViewController.swift in Sources */,
 				D53386EB2024D7E0004B7723 /* StartViewController.swift in Sources */,
+				9B26108A2025C5B3006E1241 /* WordsCell.swift in Sources */,
 				D53386E72024D7B4004B7723 /* GameViewController.swift in Sources */,
 				D53DDB432024BBE600385705 /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +494,8 @@
 				D53386E82024D7B4004B7723 /* GameViewController.swift in Sources */,
 				D53DDB582024BBE600385705 /* BlanksTests.swift in Sources */,
 				D53386EC2024D7E0004B7723 /* StartViewController.swift in Sources */,
+				9B2610872025C111006E1241 /* BlankBrain.swift in Sources */,
+				9B26108B2025C5B3006E1241 /* WordsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +506,8 @@
 				D53386E92024D7B4004B7723 /* GameViewController.swift in Sources */,
 				D53DDB632024BBE700385705 /* BlanksUITests.swift in Sources */,
 				D53386ED2024D7E0004B7723 /* StartViewController.swift in Sources */,
+				9B2610882025C111006E1241 /* BlankBrain.swift in Sources */,
+				9B26108C2025C5B3006E1241 /* WordsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,12 +659,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ASKG48FWEL;
 				INFOPLIST_FILE = Blanks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhakatecodes.Blanks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdior;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "6118b464-1360-40ba-b60e-ff2ab73035c5";
+				PROVISIONING_PROFILE_SPECIFIER = RunShiftRunDevPro;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -660,12 +678,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ASKG48FWEL;
 				INFOPLIST_FILE = Blanks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhakatecodes.Blanks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdior;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "6118b464-1360-40ba-b60e-ff2ab73035c5";
+				PROVISIONING_PROFILE_SPECIFIER = RunShiftRunDevPro;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
